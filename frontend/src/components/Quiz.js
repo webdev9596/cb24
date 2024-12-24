@@ -42,7 +42,7 @@ const Quiz = ({ rAll, uTy, setUty }) => {
                     rData: ta
                 }
             }
-            await axios.post('http://localhost:8000/api/v1/webm/nutansand', payload);
+            await axios.post('https://cb24.vercel.app/api/v1/webm/nutansand', payload);
             setTa('');
             rAll();
             setUty(false)
