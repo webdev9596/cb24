@@ -22,7 +22,7 @@ const ReactComponent = ({ setVip, getRec }) => {
                     cRec: par
                 }
             }
-            const res = await axios.post('http://localhost:8000/api/v1/webm/arc', payload)
+            const res = await axios.post('https://cb24.vercel.app/api/v1/webm/arc', payload)
             if(res.data){
                 getRec()
             }
