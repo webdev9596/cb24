@@ -12,7 +12,7 @@ const app = express()
 dotenv.config()
 app.use(cors(
     {
-        origin: ["https://codebuddyIearner.vercel.app/"],
+        origin: ["https://codebuddy1earner.vercel.app/"],
         methods: ["POST", "GET", "PUT", "DELETE"],
         credentials: true
     }
