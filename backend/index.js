@@ -23,7 +23,6 @@ connectDb()
 app.use(express.json())
 
 app.use('/api/v1/webm', webmrouter)
-app.use('/api/v1/webu', weburouter)
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
 })
