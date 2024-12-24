@@ -27,6 +27,6 @@ app.get('/api/v1/webm/grc:1', (req, res) => {
 });
 app.use('/api/v1/webm', webmrouter)
 app.use('/api/v1/webu', weburouter)
-
-app.listen(process.env.PORT, () => {
+const port = process.env.PORT || 8000;
+app.listen(port, () => {
 })
