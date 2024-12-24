@@ -20,7 +20,7 @@ const TypescriptComponent = ({ setVip }) => {
         setGetC(getC + 1)
         if (getC + 1 == 8) {
             try {
-                const res = await axios.get('http://localhost:8000/api/v1/webm/sands')
+                const res = await axios.get('https://cb24.vercel.app/api/v1/webm/sands')
                 setComRes(res.data.ms)
             } catch (error) {
 
