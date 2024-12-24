@@ -21,6 +21,9 @@ app.use(cors(
 connectDb()
 app.use(express.json())
 
+app.get('/api/v1/webm/grc:1', (req, res) => {
+  res.json({ message: "Route found!" });
+});
 app.use('/api/v1/webm', webmrouter)
 app.use('/api/v1/webu', weburouter)
 
