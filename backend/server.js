@@ -10,13 +10,14 @@ import cors from 'cors'
 const app = express()
 
 dotenv.config()
-app.use(cors(
-    {
-        origin: ["https://codebuddy1earner.vercel.app"],
-        methods: ["POST", "GET", "PUT", "DELETE"],
-        credentials: true
-    }
-));
+
+const corsOptions = {
+  origin: 'https://codebuddy1earner.vercel.app', // Specify the allowed origin
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Include credentials like cookies
+};
+
+app.use(cors(corsOptions));
 
 connectDb()
 app.use(express.json())
