@@ -17,7 +17,7 @@ function App() {
       if (vip == true) {
         ver = 1
       }
-      const res = await axios.get(`http://localhost:8000/api/v1/webm/grc:${ver}`)
+      const res = await axios.get(`https://cb24.vercel.app/api/v1/webm/grc:${ver}`)
       const cObj = {
         'b': '#007BFF',
         'y': "#FFC107",
